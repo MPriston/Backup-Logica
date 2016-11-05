@@ -1,0 +1,46 @@
+FND e FNC para as T.V. abaixo:
+
+
+  p | q | A |
+----|---|---|
+1 v | v | v | p^q
+2 v | f | v | p^¬q
+3 f | v | v | ¬p^q
+4 f | f | f | pvq
+
+FND de A - (p^q)v(p^¬q)v(¬p^q)
+
+FNC de A - pvq
+
+  p | q | B |
+----|---|---|  
+1 v | v | v | p^q
+2 v | f | f | ¬pvq
+3 f | v | f | pv¬q
+4 f | f | v | ¬p^¬q
+
+FND de B - (p^q)v(¬p^¬q)
+
+FNC de B - (¬pvq)^(pv¬q)
+
+  p | q | C |
+----|---|---|  
+1 v | v | f | ¬pv¬q
+2 v | f | v | p^¬q
+3 f | v | v | ¬p^q
+4 f | f | f | pvq
+
+FND de C - (p^¬q)v(¬p^q)
+
+FNC de C - (¬pv¬q)^(pvq)
+
+  p | q | D |
+----|---|---|  
+1 v | v | f | ¬pv¬q 
+2 v | f | v | p^¬q 
+3 f | v | f | pv¬q
+4 f | f | v | ¬p^¬q
+
+FND de D - (p^¬q)v(¬p^¬q)
+
+FNC de D - (¬pv¬q)^(pv¬q)

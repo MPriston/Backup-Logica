@@ -1,0 +1,18 @@
+Exercício 4 de Lógica
+Autor: Matheus Priston Carruthers Figueira
+
+Tabela Verdade para provar que p->(q^r) => ¬(q^r)->¬p é tautologia
+
+               c     a     d    e     b
+  p | q | r | q^r | p->c | ¬c | ¬p | d->e | a->b |
+----|---|---|-----|------|----|----|------|------|
+1 v | v | v |  v  |  v   | f  | f  |  v   |  v   |
+2 v | v | f |  f  |  f   | v  | f  |  f   |  v   |
+3 v | f | v |  f  |  f   | v  | f  |  f   |  v   |
+4 v | f | f |  f  |  f   | v  | f  |  f   |  v   |
+5 f | v | v |  v  |  v   | f  | v  |  v   |  v   |
+6 f | v | f |  f  |  v   | v  | v  |  v   |  v   |
+7 f | f | v |  f  |  v   | v  | v  |  v   |  v   |
+8 f | f | f |  f  |  v   | v  | v  |  v   |  v   |
+
+portanto a => b é tautologia

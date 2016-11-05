@@ -1,0 +1,83 @@
+Regra Modus Poneus - MP
+
+           a      b
+  p | q | p->q | p^a | b->q |
+----|---|------|-----|------|
+1 v | v |  v   |  v  |  v   |
+2 v | f |  f   |  f  |  v   |
+3 f | v |  v   |  f  |  v   |
+4 f | f |  v   |  f  |  v   |
+
+é tautalogia, b => q
+
+Regra Modus Tollens - MT
+
+          a     b      c    d   
+  p | q | ¬q | p->q | a^b | ¬p | c->d |
+----|---|----|------|-----|----|------|
+1 v | v | f  |  v   |  f  | f  |  v   |
+2 v | f | v  |  f   |  f  | f  |  v   |
+3 f | v | f  |  v   |  f  | v  |  v   |
+4 f | f | v  |  v   |  v  | v  |  v   |
+
+é tautologia, c => d
+
+Regra Silogismo Hipotetico - SH
+
+               a      b      c     d
+  p | q | r | p->q | q->r | a^b | p->r | c->d | 
+----|---|---|------|------|-----|------|------|
+1 v | v | v |  v   |  v   |  v  |  v   |  v   |
+2 v | v | f |  v   |  f   |  f  |  f   |  v   |
+3 v | f | v |  f   |  v   |  f  |  v   |  v   |
+4 v | f | f |  f   |  v   |  f  |  f   |  v   |
+5 f | v | v |  v   |  v   |  v  |  v   |  v   |
+6 f | v | f |  v   |  f   |  f  |  v   |  v   |
+7 f | f | v |  v   |  v   |  v  |  v   |  v   |
+8 f | f | f |  v   |  v   |  v  |  v   |  v   |
+
+é tautologia, c => d
+
+Regra Silogismo Disjuntivo - SD
+
+           a    b     c  
+  p | q | pvq | ¬p | a^b | c->q |
+----|---|-----|----|-----|------|
+1 v | v |  v  | f  |  f  |  v   |
+2 v | f |  v  | f  |  f  |  v   |
+3 f | v |  v  | v  |  v  |  v   |
+4 f | f |  f  | v  |  f  |  v   |
+
+é tautologia, c => q
+
+Regra Eliminação - EL
+
+               a     b     c     d     e
+  p | q | r | qvr | p->a | ¬q | b^c | p->r | d->e |
+----|---|---|-----|------|----|-----|------|------|
+1 v | v | v |  v  |  v   | f  |  f  |  v   |  v   | 
+2 v | v | f |  v  |  v   | f  |  f  |  f   |  v   |
+3 v | f | v |  v  |  v   | v  |  v  |  v   |  v   |
+4 v | f | f |  f  |  f   | v  |  f  |  f   |  v   |
+5 f | v | v |  v  |  v   | f  |  f  |  v   |  v   |
+6 f | v | f |  v  |  v   | f  |  f  |  v   |  v   |
+7 f | f | v |  v  |  v   | v  |  v  |  v   |  v   |
+8 f | f | f |  f  |  v   | v  |  v  |  v   |  v   |
+
+é tautologia, d => e
+
+Regra Prova Por Casos - CS
+
+               a      b      c     d     e
+  p | q | r | p->r | q->r | a^b | pvq | d->r | c->e |  
+----|---|---|------|------|-----|-----|------|------|
+1 v | v | v |  v   |  v   |  v  |  v  |  v   |  v   |
+2 v | v | f |  f   |  f   |  f  |  v  |  f   |  v   |
+3 v | f | v |  v   |  v   |  v  |  v  |  v   |  v   |
+4 v | f | f |  f   |  v   |  f  |  v  |  f   |  v   |
+5 f | v | v |  v   |  v   |  v  |  v  |  v   |  v   |
+6 f | v | f |  v   |  f   |  f  |  v  |  v   |  v   |
+7 f | f | v |  v   |  v   |  v  |  f  |  v   |  v   |
+8 f | f | f |  v   |  v   |  v  |  f  |  v   |  v   |
+
+é tautologia, c => e
